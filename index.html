@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blooket Practice</title>
+<style>
+body {
+  background: #17172b;
+  color: white;
+  font-family: Arial;
+  text-align: center;
+  padding: 20px;
+}
+input, button {
+  padding: 13px;
+  margin: 7px;
+  border-radius: 9px;
+}
+button { cursor: pointer; }
+</style>
+</head>
+<body>
+<h1>🔥 Blooket Practice</h1>
+<input id="question" placeholder="Escribe una pregunta"><br>
+<input id="answer" placeholder="Respuesta correcta"><br>
+<button onclick="showAnswer()">Ver respuesta</button>
+<h2 id="result"></h2>
+<script>
+function showAnswer() {
+ document.getElementById("result").textContent =
+ "Respuesta: " + document.getElementById("answer").value;
+}
+</script>
+</body>
+</html>
